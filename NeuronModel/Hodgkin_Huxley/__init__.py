@@ -1,0 +1,5 @@
+import NeuronModel
+from NeuronModel import Hodgkin_Huxley
+from NeuronModel.Hodgkin_Huxley import hodgkin_huxley_parameters
+from NeuronModel.Hodgkin_Huxley import mainer_parameters
+from NeuronModel.Hodgkin_Huxley import neuronal_dynamics_parameters
