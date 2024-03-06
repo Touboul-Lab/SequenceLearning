@@ -1,0 +1,33 @@
+import argparse
+
+def create_parser_main_DMS():
+    parser = argparse.ArgumentParser(description='Compute the accuracy of the network')
+    parser.add_argument('--save_dir', type=str, help='save_dir', default='../Simu')
+    parser.add_argument('--name', type=str, help='name', default='local/test')
+    parser.add_argument('--P', type=int, help='Number of neurons', default=10)
+    parser.add_argument('--stim_by_pattern', type=int, help='stim_by_pattern', default=3)
+    parser.add_argument('--Apostpre', type=float, help='Apostpre', default=-1.0)
+    parser.add_argument('--Aprepost', type=float, help='Aprepost', default=-1.0)
+    parser.add_argument('--homeostasy', type=float, help='homeostasy', default=0.95)
+    parser.add_argument('--epsilon', type=float, help='epsilon', default=0.2)
+    parser.add_argument('--noise_pattern', type=float, help='noise_pattern', default=0.)
+    parser.add_argument('--noise_input', type=float, help='noise_input', default=0.01)
+    parser.add_argument('--stop_learning', type=str, help='stop_learning', default='None')
+    parser.add_argument('--num_success_params', type=int, help='num_success_params', default=0)
+    parser.add_argument('--p_reward', type=float, help='p_reward', default=0.5)
+    parser.add_argument('--stim_duration', type=float, help='stim_duration', default=50.)
+    parser.add_argument('--stim_offset', type=float, help='stim_offset', default=20.)
+    parser.add_argument('--homeostasy_post', type=float, help='homeostasy_post', default=0.)
+    parser.add_argument('--stim_recall', type=float, help='stim_recall', default=0.)
+    parser.add_argument('--dt', type=float, help='dt', default=0.2)
+    parser.add_argument('--num_training_initial', type=int, help='num_training_initial', default=200)
+    parser.add_argument('--num_training_learning', type=int, help='num_training_learning', default=200)
+    parser.add_argument('--num_training_maintenance', type=int, help='num_training_maintenance', default=200)
+    parser.add_argument('--num_training_recall', type=int, help='num_training_recall', default=200)
+    parser.add_argument('--num_simu', type=int, help='num_simu', default=500)
+    parser.add_argument('--new_set', type=int, help='new_set', default=0)
+    parser.add_argument('--save', help='save', action='store_true', default=False)
+    parser.add_argument('--plot', help='plot', action='store_true', default=False)
+    parser.add_argument('--random_seed', type=int, help='random_seed', default=None)
+
+    return parser

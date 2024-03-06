@@ -1,0 +1,44 @@
+DURATION 100
+NODE 1
+CORES 16
+
+$single_list_pattern
+'network' 'pattern' 'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'noise_pattern' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu' 'neuronClass' 'repartition' 'stim_offset'
+'single' 'jitter' 'Figure_6' '10' '3' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.1' '50' '250' 'MSN_IAF_EXP' 'uniform_stim' '20.'
+
+$dual_list_pattern
+'network' 'pattern' 'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'noise_pattern' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu' 'J_matrix' 'J_value' 'neuronClass' 'repartition' 'stim_offset' 'J_reward'
+'dual' 'jitter' 'Figure_6' '10' '3' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_IAF_EXP' 'uniform_stim' '20.' 'differential'
+'dual' 'jitter' 'Figure_6' '10' '3' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' 'uniform_stim' '20.' 'differential'
+'dual' 'jitter' 'Figure_6' '10' '3' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_IAF_EXP' 'uniform_stim' '20.' 'differential'
+'dual' 'jitter' 'Figure_6' '10' '3' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' 'uniform_stim' '20.' 'differential'
+
+$single_poisson
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'noise_pattern' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'dt' 'num_training' 'num_simu' 'neuronClass' 'duration_poisson' 'noise_poisson' 'stim_offset'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_IAF_EXP' '2.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_Izhi' '2.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_IAF_EXP' '3.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_Izhi' '3.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_IAF_EXP' '5.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_Izhi' '5.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_IAF_EXP' '10.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_Izhi' '10.' '0.5' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_IAF_EXP' '2.' '1.0' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_Izhi' '2.' '1.0' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_IAF_EXP' '2.' '2.0' '20.'
+'single' 'poisson' 'Figure_6' '10' '-1.0 1.0' '-1.0 1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' 'MSN_Izhi' '2.' '2.0' '20.'
+
+$dual_poisson
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'noise_pattern' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'dt' 'num_training' 'num_simu' 'J_matrix' 'J_value' 'neuronClass' 'duration_poisson' 'noise_poisson' 'stim_offset' 'J_reward'
+'dual' 'poisson' 'Figure_6' '10' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '2.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '2.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '3.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '3.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '5.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '5.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '10.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '10.' '0.5' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '2.' '1.0' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '2.' '1.0' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '1.0' '-1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '2.' '2.0' '20.' 'differential'
+'dual' 'poisson' 'Figure_6' '10' '-1.0' '1.0' '0.9 0.' '0.02' '0.' '0.' '0.' 'None' '0' '0.5' '50.' '0.1' '50' '250' '0 1 2 3' '0.5' 'MSN_Izhi' '2.' '2.0' '20.' 'differential'

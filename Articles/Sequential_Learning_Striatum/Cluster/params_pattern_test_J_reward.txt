@@ -1,0 +1,10 @@
+DURATION 20
+NODE 1
+CORES 16
+
+$dual_succession
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'noise_pattern' 'stop_learning' 'num_success_params' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'J_matrix' 'J_value' 'neuronClass' 'stim_offset' 'J_reward'
+'dual' 'succession' 'Figure_5' '6' '1.0' '-1.0' '0.9 0.' '0.005' '0.' '0.' '0.' 'None' '0' '50.' '0.5' '0.1' '2000' '0 1 2 3' '0.5' 'MSN_Izhi' '20.' 'differential'
+'dual' 'succession' 'Figure_5' '6' '-1.0' '1.0' '0.9 0.' '0.005' '0.' '0.' '0.' 'None' '0' '50.' '0.5' '0.1' '2000' '0 1 2 3' '0.5' 'MSN_Izhi' '20.' 'differential'
+'dual' 'succession' 'Figure_5' '6' '1.0' '-1.0' '0.9 0.' '0.005' '0.' '0.' '0.' 'None' '0' '50.' '0.5' '0.1' '2000' '0 1 2 3' '0.5' 'MSN_Izhi' '20.' 'same'
+'dual' 'succession' 'Figure_5' '6' '-1.0' '1.0' '0.9 0.' '0.005' '0.' '0.' '0.' 'None' '0' '50.' '0.5' '0.1' '2000' '0 1 2 3' '0.5' 'MSN_Izhi' '20.' 'same'

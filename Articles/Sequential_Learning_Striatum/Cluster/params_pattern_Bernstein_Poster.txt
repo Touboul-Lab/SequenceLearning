@@ -1,0 +1,49 @@
+DURATION 48
+NODE 1
+CORES 16
+
+$single_list_pattern
+'network' 'pattern' 'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.02' '0.' '0.' 'None' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.02' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+'single' 'list_pattern' 'Figure_Bernstein_List' '5 10 20 30 50' '3' '1.0' '-1.0' '0.95' '0.02' '0.' '0.' 'None exponential_trace number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '0. 0.8 1.0 1.5 2.0' '-1.0' '0.95' '0.02' '0.' '0.' 'None exponential_trace number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '1.0' '-1.0' '0.5 0.8 0.95 0.98' '0.02' '0.' '0.' 'None exponential_trace number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '1.0' '-1.0' '0.95' '0.02' '0.001 0.01 0.1 1.' '0.' 'None exponential_trace number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '1.0' '-1.0' '0.95' '0.02' '0.' '0.001 0.01 0.1 1.' 'None exponential_trace number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200'
+
+$dual_list_pattern
+'network' 'pattern' 'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu' 'J'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'None' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 1 2 5'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 1 2 5'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 1 2 5'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '5 10 20 30 50' '3' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 2 5'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '0. 0.8 1.0 1.5 2.0' '-1.0' '3.0' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 2 5'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '1.0' '-1.0' '1.0 2.0 3.0 3.5' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 2 5'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '1.0' '-1.0' '3.0' '0.02' '0.001 0.01 0.1 1.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 2 5'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10' '3' '1.0' '-1.0' '3.0' '0.02' '0.' '0.001 0.01 0.1 1.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '500' '200' '0 2 5'
+
+$single_succession
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'stim_duration' 'stim_delay' 'dt' 'num_training'
+'single' 'succession' 'Figure_Bernstein_Succession' '10' '-1.0 1.0' '-1.0 1.0' '0.95' '0.02' '0.' '0.' 'None exponential_trace number_success' '0' '200.' '1.0' '0.5' '2000'
+
+$dual_succession
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'J'
+'dual' 'succession' 'Figure_Bernstein_Succession' '10' '-1.0 1.0' '-1.0 1.0' '3.0' '0.02' '0.' '0.' 'None' '0' '200.' '1.0' '0.5' '2000' '0 1 2 5'
+'dual' 'succession' 'Figure_Bernstein_Succession' '10' '-1.0 1.0' '-1.0 1.0' '3.0' '0.02' '0.' '0.' 'number_success' '0' '200.' '1.0' '0.5' '2000' '0 1 2 5'
+'dual' 'succession' 'Figure_Bernstein_Succession' '10' '-1.0 1.0' '-1.0 1.0' '3.0' '0.02' '0.' '0.' 'exponential_trace' '0' '200.' '1.0' '0.5' '2000' '0 1 2 5'
+
+$single_poisson
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'duration_poisson' 'noise_poisson' 'dt' 'num_training' 'num_simu'
+'single' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '-1.0 1.0' '-1.0 1.0' '0.95' '0.02' '0.' '0.' 'None' '0' '0.5' '200. ' '10.' '0.1 1.' '0.5' '500' '200'
+'single' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '-1.0 1.0' '-1.0 1.0' '0.95' '0.02' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '10.' '0.1 1.' '0.5' '500' '200'
+'single' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '-1.0 1.0' '-1.0 1.0' '0.95' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '10.' '0.1 1.' '0.5' '500' '200'
+'single' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '-1.0' '-1.0' '0.95' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1. 5. 10. 20.' '0.1 1.' '0.5' '500' '200'
+
+$dual_poisson
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'duration_poisson' 'noise_poisson' 'dt' 'num_training' 'num_simu' 'J'
+'dual' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'None' '0' '0.5' '200. ' '10.' '0.1 1.' '0.5' '500' '200' '0 1 2 5'
+'dual' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '10.' '0.1 1.' '0.5' '500' '200' '0 1 2 5'
+'dual' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '10.' '0.1 1.' '0.5' '500' '200' '0 1 2 5'
+'dual' 'poisson' 'Figure_Bernstein_Poisson' '10 20' '1.0' '-1.0' '3.0' '0.02' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1. 5. 10. 20.' '0.1 1.' '0.5' '500' '200' '2'

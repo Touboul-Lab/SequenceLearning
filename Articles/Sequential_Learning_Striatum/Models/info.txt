@@ -1,0 +1,48 @@
+Script run on 13/01/2022 13:19:49
+
+
+git info
+
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    ../../../Analysis/main_AP.py
+	deleted:    ../Models/Params_MSN_In_Vitro.xlsx
+	deleted:    ../Models/Plot_MSN_In_Vitro.pdf
+	deleted:    ../Models/Plot_ParamsMSN_In_Vitro.pdf
+	deleted:    ../Models/info.txt
+	deleted:    ../Models/params_IAF_Elodie_MSN_In_Vitro.npy
+	deleted:    ../Models/params_Izhi_Elodie_MSN_In_Vitro.npy
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../../../Analysis/AP_Analysis.py
+	modified:   AP/main_AP.py
+	modified:   AP/main_export_AP.py
+	modified:   InitParams.py
+	modified:   ParserPattern.py
+	modified:   ../Model.tex
+	modified:   ../../../IDEAS.md
+	modified:   ../../../NeuronModel/Integrate_and_Fire.py
+	modified:   ../../../NeuronModel/Izhikevich.py
+	modified:   ../../../Simulator/Pattern.py
+	modified:   ../../../Simulator/SimulatorPattern.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../Cluster/params_pattern_article_poisson.txt
+	info.txt
+	../Models/
+
+commit a33f005607301cdacd1bf799bd703d6acd329fa3
+Author: gvignoud <gaetan.vignoud@gmail.com>
+Date:   Sat Dec 18 12:52:10 2021 +0100
+
+    DMS/DLS -> last last corrections reviews

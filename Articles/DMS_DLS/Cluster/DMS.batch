@@ -1,0 +1,75 @@
+#!/bin/bash
+
+#SBATCH --mail-type=END,FAIL,TIME_LIMIT          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=gaetan.vignoud@inria.fr    # Where to send mail
+#SBATCH --output=%j.out     		  # File to redirect STDOUT to
+#SBATCH --error=%j.err 	          # File to redirect STDERR to
+
+#OAR -p host not in ('node057')
+#OAR -O %jobid%.out
+#OAR -E %jobid%.err
+#OAR --notify [END,ERROR]mail:gaetan.vignoud@inria.fr
+
+set -x
+
+echo 'Start'
+
+if [ $USER == 'uai89wz' ]
+then
+    SCRIPT_DIR=$WORK
+    JOB_ID=$SLURM_JOB_ID
+    JOB_NAME=$SLURM_JOB_NAME
+    TASK_ID=$SLURM_ARRAY_TASK_ID
+    echo $SLURM_SUBMIT_DIR
+    echo $SLURM_JOB_NAME
+    echo $SLURM_JOB_ID >> SLURM_JOB_NAMES.txt
+    module load parallel
+    parallel_command='parallel'
+else
+  if [ -z ${OAR_JOB_ID+x} ]
+  then
+      SCRIPT_DIR='/scratch/gvignoud'
+      JOB_ID=$SLURM_JOB_ID
+      JOB_NAME=$SLURM_JOB_NAME
+      TASK_ID=$SLURM_ARRAY_TASK_ID
+      echo $SLURM_SUBMIT_DIR
+      echo $SLURM_JOB_NAME
+      echo $SLURM_JOB_ID >> SLURM_JOB_NAMES.txt
+  elif [ -z ${SLURM_JOB_ID+x} ]
+  then
+      SCRIPT_DIR='/home/rioc/gvignoud'
+      JOB_ID=$OAR_JOB_ID
+      JOB_NAME=$OAR_PROJECT_NAME
+      TASK_ID=$OAR_ARRAY_INDEX
+      echo $OAR_JOB_ID >> OAR_JOB_NAMES.txt
+      cp $OAR_RESOURCE_PROPERTIES_FILE $OAR_JOB_ID.ressources
+  fi
+  parallel_command="$SCRIPT_DIR/bin/parallel"
+fi
+
+PARAMS_TXT="$SCRIPT_DIR/numeric_networks/Articles/DMS_DLS/Cluster/params_DMS_$JOB_NAME.txt"
+
+OFFSET=6
+OFFSET_ARGS=$OFFSET
+NUM_SECTION=( $(grep -n '\$' $PARAMS_TXT | cut -d: -f 1) )
+for ((i=0;i<$((${#NUM_SECTION[@]}-1));++i)); do
+    if [ $(($TASK_ID+$OFFSET)) -gt $((${NUM_SECTION[$(($i+1))]}-2)) ]
+    then
+        OFFSET=$(($OFFSET+3))
+        OFFSET_ARGS=$((${NUM_SECTION[$(($i+1))]}+1))
+    fi
+done
+NUM_LINE_ID=$(($TASK_ID+$OFFSET))
+
+args=$(sed "$(($OFFSET_ARGS))!d" $PARAMS_TXT)
+args_without="${args//"'"}"
+line=$(sed "$NUM_LINE_ID!d" $PARAMS_TXT)
+line_without=$(echo $line | sed 's/^.\(.*\).$/\1/')
+line_parallel="${line_without//"' '"/ ::: }"
+
+${parallel_command} $SCRIPT_DIR/numeric_networks/Articles/DMS_DLS/Cluster/pattern_DMS.sh \
+    ::: $JOB_NAME ::: "$args_without" ::: $line_parallel
+
+zip -rm $JOB_ID.zip $JOB_ID.* $JOB_ID
+
+echo 'End'

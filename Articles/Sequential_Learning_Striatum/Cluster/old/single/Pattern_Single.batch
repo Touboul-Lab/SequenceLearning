@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#SBATCH --mail-type=END,FAIL,TIME_LIMIT          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=gaetan.vignoud@inria.fr    # Where to send mail
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=24
+#SBATCH --mem=10gb                 # Job memory request; if unit is not specified MB will be assumed
+#SBATCH --time=168:00:00               # Time limit hrs:min:sec
+#SBATCH --output=%j.out     		  # File to redirect STDOUT to
+#SBATCH --error=%j.err 	          # File to redirect STDERR to
+
+#OAR -l /nodes=1/core=24,walltime=168:00:00
+#OAR -p host not in ('node057')
+#OAR -O %jobid%.out
+#OAR -E %jobid%.err
+#OAR --notify [END,ERROR]mail:gaetan.vignoud@inria.fr
+
+set -x
+
+echo 'Start'
+
+if [ -z ${OAR_JOB_ID+x} ]
+then
+    SCRIPT_DIR='/home/gvignoud'
+    JOB_ID=$SLURM_JOB_ID
+    JOB_NAME=$SLURM_JOB_NAME
+    TASK_ID=$(($SLURM_ARRAY_TASK_ID+1))
+    echo $SLURM_SUBMIT_DIR
+    echo $SLURM_JOB_NAME
+    echo $SLURM_JOB_ID >> SLURM_JOB_NAMES.txt
+elif [ -z ${SLURM_JOB_ID+x} ]
+then
+    SCRIPT_DIR='/home/rioc/gvignoud'
+    JOB_ID=$OAR_JOB_ID
+    JOB_NAME=$OAR_PROJECT_NAME
+    TASK_ID=$(($OAR_ARRAY_INDEX+1))
+    echo $OAR_JOB_ID >> OAR_JOB_NAMES.txt
+    cp $OAR_RESOURCE_PROPERTIES_FILE $OAR_JOB_ID.ressources
+fi
+
+PARAMS_TXT="$SCRIPT_DIR/numeric_networks/Articles/Sequential_Learning_Striatum/Cluster/single/params_pattern_single_$JOB_NAME.txt"
+
+args=$(sed '1!d' $PARAMS_TXT)
+args_without="${args//"'"}"
+line=$(sed "$TASK_ID!d" $PARAMS_TXT)
+line_without=$(echo $line | sed 's/^.\(.*\).$/\1/')
+line_parallel="${line_without//"' '"/ ::: }"
+
+$SCRIPT_DIR/bin/parallel --results $JOB_ID $SCRIPT_DIR/numeric_networks/Articles/Sequential_Learning_Striatum/Cluster/single/pattern_single.sh \
+    ::: $JOB_NAME ::: "$args_without" ::: $line_parallel
+
+zip -rm $JOB_ID.zip $JOB_ID.* $JOB_ID
+
+echo 'End'

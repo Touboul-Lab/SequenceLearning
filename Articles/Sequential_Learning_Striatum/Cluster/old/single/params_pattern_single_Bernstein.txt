@@ -1,0 +1,6 @@
+'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input'  'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu'
+'Figure_Single' '10 20' '3 4 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.05' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.1' '2000' '100'
+'Figure_Single' '10 20' '3 4 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.05' '0.' '0.' 'exponential_trace' '0' '0.5' '50.' '1.' '0.1' '2000' '100'
+'Figure_Single' '10 20' '3 4 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.05' '0.' '0.' 'number_success' '0' '0.5' '50.' '1.' '0.1' '2000' '100'
+'Figure_Single' '3 4 5 10 20 30 50 100' '3' '1.0' '-1.0' '0.95' '0.05' '0.' '0.' 'None exponential_trace number_success' '0' '0.5' '50.' '1.' '0.1' '2000' '100'
+'Figure_Single' '10' '3' '0. 0.5 0.8 1.0 1.2 1.5 2. 5.' '-1.0' '0.95' '0.05' '0.' '0.' 'None exponential_trace number_success' '0' '0.5' '50.' '1.' '0.1' '2000' '100'

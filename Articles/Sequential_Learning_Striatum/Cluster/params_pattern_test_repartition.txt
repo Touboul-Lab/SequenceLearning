@@ -1,0 +1,21 @@
+DURATION 168
+NODE 1
+CORES 24
+
+$single_list_pattern
+'network' 'pattern' 'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu' 'repartition'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'None' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' 'uniform'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' 'uniform'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' 'uniform'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'None' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' 'uniform_stim'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' 'uniform_stim'
+'single' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' 'uniform_stim'
+
+$dual_list_pattern
+'network' 'pattern' 'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu' 'J' 'repartition'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.002' '0.' '0.' 'None' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' '0 1 2 5' 'uniform'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.002' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' '0 1 2 5' 'uniform'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.002' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' '0 1 2 5' 'uniform'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.002' '0.' '0.' 'None' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' '0 1 2 5' 'uniform_stim'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.002' '0.' '0.' 'exponential_trace' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' '0 1 2 5' 'uniform_stim'
+'dual' 'list_pattern' 'Figure_Bernstein_List' '10 20' '3 5' '1.0' '-1.0' '3.0' '0.002' '0.' '0.' 'number_success' '0' '0.5' '200. ' '1.0' '0.5' '5000' '200' '0 1 2 5' 'uniform_stim'

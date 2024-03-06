@@ -1,0 +1,11 @@
+'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input'  'stop_learning' 'num_success_params' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'J'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '2.' '0.05' '0.' '0.' 'None' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '2.5' '0.05' '0.' '0.' 'None' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '3.' '0.05' '0.' '0.' 'None' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '3.5' '0.05' '0.' '0.' 'None' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '4.' '0.05' '0.' '0.' 'None' '0' '50.' '1.' '0.1' '2000' '0 1 2 5
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '2.' '0.05' '0.' '0.' 'number_success' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '2.5' '0.05' '0.' '0.' 'number_success' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '3.' '0.05' '0.' '0.' 'number_success' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '3.5' '0.05' '0.' '0.' 'number_success' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'
+'Figure_Succession' '10' '-1.0 1.0' '-1.0 1.0' '4.' '0.05' '0.' '0.' 'number_success' '0' '50.' '1.' '0.1' '2000' '0 1 2 5'

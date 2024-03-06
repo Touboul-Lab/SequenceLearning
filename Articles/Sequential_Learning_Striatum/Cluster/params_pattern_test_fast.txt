@@ -1,0 +1,7 @@
+DURATION 96
+NODE 1
+CORES 16
+
+$single_list_pattern
+'network' 'pattern' 'name' 'P' 'stim_by_pattern' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input'  'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'stim_delay' 'dt' 'num_training' 'num_simu' 'neuronClass' 'repartition'
+'single' 'list_pattern' 'Figure_1' '50' '3' '-1.0 0. 1.0' '-1.0 0. 1.0' '0.95 0.' '0.02' '0.' '0.' 'None' '0' '0.5' '20.' '1.' '0.2' '10' '100' 'MSN_IAF_EXP' 'uniform_stim'

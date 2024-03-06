@@ -1,0 +1,12 @@
+DURATION 100
+NODE 1
+CORES 16
+
+$example
+'network' 'pattern' 'name' 'pattern_example' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input' 'noise_pattern' 'stop_learning' 'num_success_params' 'no_reward' 'dt' 'num_training' 'num_simu' 'neuronClass' 'start_weight' 'stim_duration' 'stim_offset'
+'single' 'example' 'Figure_2' 'A' '10' '-1.0 1.0' '-1.0 1.0' '0.5' '0.001' '0.1' '0.' '0.' 'None' '0' '0 1' '0.1' '2000' '500' 'MSN_IAF_EXP' 'low high' '50.' '20.'
+'single' 'example' 'Figure_2' 'A' '10' '-1.0 1.0' '-1.0 1.0' '0.5' '0.001' '0.01' '0.' '0.' 'None' '0' '0 1' '0.1' '2000' '500' 'MSN_IAF_EXP' 'low high' '50.' '20.'
+'single' 'example' 'Figure_2' 'B' '10' '-1.0 1.0' '-1.0 1.0' '0.5' '0.001' '0.' '0.' '0.' 'None' '0' '0 1' '0.1' '2000' '500' 'MSN_IAF_EXP' 'low high' '50.' '20.'
+'single' 'example' 'Figure_2' 'A' '10' '-1.0 1.0' '-1.0 1.0' '0.9' '0.001' '0.1' '0.' '0.' 'None' '0' '0 1' '0.1' '2000' '500' 'MSN_IAF_EXP' 'low high' '50.' '20.'
+'single' 'example' 'Figure_2' 'A' '10' '-1.0 1.0' '-1.0 1.0' '0.9' '0.001' '0.01' '0.' '0.' 'None' '0' '0 1' '0.1' '2000' '500' 'MSN_IAF_EXP' 'low high' '50.' '20.'
+'single' 'example' 'Figure_2' 'B' '10' '-1.0 1.0' '-1.0 1.0' '0.9' '0.001' '0.' '0.' '0.' 'None' '0' '0 1' '0.1' '2000' '500' 'MSN_IAF_EXP' 'low high' '50.' '20.'

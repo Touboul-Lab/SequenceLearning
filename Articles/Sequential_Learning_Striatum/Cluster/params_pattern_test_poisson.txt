@@ -1,0 +1,19 @@
+DURATION 168
+NODE 1
+CORES 24
+
+$single_poisson
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input'  'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'duration_poisson' 'noise_poisson' 'dt' 'num_training' 'num_simu'
+'single' 'poisson' 'single' '10 20' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.5 1. 2.' '0.1' '5000' '100'
+'single' 'poisson' 'single' '10 20' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'exponential_trace' '0' '0.5' '50.' '1.' '0.5 1. 2.' '0.1' '5000' '100'
+'single' 'poisson' 'single' '10 20' '-1.0 1.0' '-1.0 1.0' '0.95' '0.002' '0.' '0.' 'number_success' '0' '0.5' '50.' '1.' '0.5 1. 2.' '0.1' '5000' '100'
+'single' 'poisson' 'single' '10 20' '-1.0' '-1.0' '0.95' '0.002' '0.' '0.' 'number_success' '0' '0.5' '50.' '0.5 1. 5. 10.' '0.5 1. 2.' '0.1' '5000' '100'
+'single' 'poisson' 'single' '10 20' '-1.0 1.0' '-1.0 1.0' '0.95' '0.001 0.002 0.005' '0.' '0.' 'number_success' '0' '0.5' '50.' '1.' '1.' '0.1' '5000' '100'
+
+$dual_poisson
+'network' 'pattern' 'name' 'P' 'Apostpre' 'Aprepost' 'homeostasy' 'epsilon' 'noise_stim' 'noise_input'  'stop_learning' 'num_success_params' 'p_reward' 'stim_duration' 'duration_poisson' 'noise_poisson' 'dt' 'num_training' 'num_simu' 'J'
+'dual' 'poisson' 'dual' '10 20' '1.0' '-1.0' '3.' '0.002' '0.' '0.' 'None' '0' '0.5' '50.' '1.' '0.5 1. 2.' '0.1' '5000' '100' '0 1 2 5'
+'dual' 'poisson' 'dual' '10 20' '1.0' '-1.0' '3.' '0.002' '0.' '0.' 'exponential_trace' '0' '0.5' '50.' '1.' '0.5 1. 2.' '0.1' '5000' '100' '0 1 2 5'
+'dual' 'poisson' 'dual' '10 20' '1.0' '-1.0' '3.' '0.002' '0.' '0.' 'number_success' '0' '0.5' '50.' '1.' '0.5 1. 2.' '0.1' '5000' '100' '0 1 2 5'
+'dual' 'poisson' 'dual' '10 20' '1.0' '-1.0' '3.' '0.002' '0.' '0.' 'number_success' '0' '0.5' '50.' '0.5 1. 5. 10.' '0.5 1. 2.' '0.1' '5000' '100' '2'
+'dual' 'poisson' 'dual' '10 20' '1.0' '-1.0' '3.' '0.001 0.002 0.005' '0.' '0.' 'number_success' '0' '0.5' '50.' '1.' '1.' '0.1' '5000' '100' '0 1 2 5'
